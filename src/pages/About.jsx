@@ -198,11 +198,11 @@ const About = () => {
                                 title: "Sân thể thao",
                                 desc: "Sân bóng đá, sân bóng rổ và khu vực tập thể dục ngoài trời",
                             },
-                            {
-                                img: "/images/canteen.jpg",
-                                title: "Căng tin",
-                                desc: "Căng tin sạch sẽ, phục vụ các món ăn dinh dưỡng và an toàn",
-                            },
+                            // {
+                            //     img: "/images/canteen.jpg",
+                            //     title: "Căng tin",
+                            //     desc: "Căng tin sạch sẽ, phục vụ các món ăn dinh dưỡng và an toàn",
+                            // },
                         ].map((item) => (
                             <div
                                 key={item.title}
