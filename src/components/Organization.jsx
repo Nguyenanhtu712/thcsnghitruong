@@ -59,7 +59,7 @@ const organizations = [
     title: "Tổ Văn phòng",
     icon: <Briefcase className="text-purple-600 w-7 h-7" />,
     leader: { name: "Phạm Thị Tuyết Chinh", role: "Tổ trưởng" },
-    deputy: { name: "Bùi Thị Quỳnh Hương", role: "Tổ phó" },
+    // deputy: { name: "Bùi Thị Quỳnh Hương", role: "Tổ phó" },
     color: "purple",
     members: [
       { name: "Phạm Thị Tuyết Chinh", dob: "08/10/1985", degree: "ĐH Kế toán", role: "Kế toán", phone: "0385145388", image: "/images/VP/phamthituyetchinh.jpg" },
@@ -96,9 +96,9 @@ export default function Organization() {
                   <li>
                     <span className="font-semibold">{org.leader.role}</span>: {org.leader.name}
                   </li>
-                  <li>
+                  {org.title !== "Tổ Văn phòng" && <li>
                     <span className="font-semibold">{org.deputy.role}</span>: {org.deputy.name}
-                  </li>
+                  </li>}
                 </ul>
               </div>
             </button>
