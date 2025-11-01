@@ -1,5 +1,7 @@
-import React from "react";
-import { Award, Target, Heart, User, Users, BookOpen, Briefcase  } from "lucide-react";
+import React, { useState } from 'react';
+import { Award, Target, Heart, User, Users, BookOpen, Briefcase, X } from "lucide-react";
+import * as Dialog from '@radix-ui/react-dialog';
+import Organization from "../components/Organization";
 
 const About = () => {
     const organization = {
@@ -7,9 +9,9 @@ const About = () => {
             title: "Ban Giám Hiệu",
             icon: <User className="text-blue-600 w-8 h-8" />,
             members: [
-                { name: "Nguyễn Văn A", role: "Hiệu trưởng" },
-                { name: "Trần Thị B", role: "Phó Hiệu trưởng" },
-                { name: "Lê Văn C", role: "Phó Hiệu trưởng" },
+                { name: "Nguyễn Thị Hà", dob: "15/07/1970", role: "Hiệu trưởng", degree: "Đại học Sinh Hoá", phone: "0915983718", image: "/images/news3.jpg" },
+                { name: "Nguyễn Minh Bằng", dob: "19/06/1971", role: "Phó Hiệu trưởng", degree: "Thạc sĩ Ngữ Văn", phone: "0981178778", image: "/images/nguyenminhbang.jpg" },
+                { name: "Nguyễn Thị Thu Hiền", dob: "18/11/1981", role: "Phó Hiệu trưởng", degree: "ĐH Toán", phone: "0915002074", image: "/images/news3.jpg" }
             ],
         },
         toKhoaHocXaHoi: {
@@ -31,6 +33,10 @@ const About = () => {
             deputy: { name: "Phan Văn I", role: "Tổ phó" },
         },
     };
+
+    const [openIndex, setOpenIndex] = useState(null);
+
+    const handleClose = () => setOpen(false); // Đóng Dialog
 
     return (
         <div className="bg-gray-50 text-gray-800">
@@ -125,21 +131,77 @@ const About = () => {
                 {/* Ban giám hiệu */}
                 <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 mb-12">
                     {organization.banGiamHieu.members.map((m, i) => (
-                        <div
+                        <Dialog.Root
                             key={i}
-                            className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg hover:-translate-y-1 transition"
+                            open={openIndex === i}
+                            onOpenChange={(open) => setOpenIndex(open ? i : null)}
                         >
-                            <div className="flex flex-col items-center text-center">
-                                {organization.banGiamHieu.icon}
-                                <h3 className="text-lg font-semibold mt-3">{m.name}</h3>
-                                <p className="text-gray-600">{m.role}</p>
-                            </div>
-                        </div>
+                            <Dialog.Trigger asChild>
+                                <button
+                                    key={i}
+                                    className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg hover:-translate-y-1 transition"
+                                >
+                                    <div className="flex flex-col items-center text-center">
+                                        {organization.banGiamHieu.icon}
+                                        <h3 className="text-lg font-semibold mt-3">{m.name}</h3>
+                                        <p className="text-gray-600">{m.role}</p>
+                                    </div>
+
+                                </button>
+                            </Dialog.Trigger>
+                            <Dialog.Portal>
+                                {/* Overlay */}
+                                <Dialog.Overlay className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40" />
+
+                                {/* Nội dung của Dialog */}
+                                <Dialog.Content
+                                    className="fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[95vw] max-w-6xl max-h-[85vh] overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl"
+                                >
+                                    {/* Header */}
+                                    <div className="flex justify-between items-center border-b pb-3 mb-4">
+                                        <Dialog.Title className="text-2xl font-semibold text-blue-700">
+                                            {m.role}
+                                        </Dialog.Title>
+                                        <Dialog.Close asChild>
+                                            <button className="rounded-full p-1 hover:bg-gray-100">
+                                                <X className="w-6 h-6 text-gray-500" />
+                                            </button>
+                                        </Dialog.Close>
+                                    </div>
+
+                                    {/* Nội dung thông tin */}
+                                    <div className="text-center">
+                                        <img
+                                            src={m.image}
+                                            alt={m.role}
+                                            className="mx-auto rounded-full w-32 h-32 object-cover mb-4"
+                                        />
+                                        <p><strong>Họ và tên:</strong> {m.name}</p>
+                                        <p><strong>Ngày sinh:</strong> {m.dob}</p>
+                                        <p><strong>Chức vụ:</strong> {m.role}</p>
+                                        <p><strong>Trình độ:</strong> {m.degree}</p>
+                                        <p><strong>Số điện thoại:</strong> {m.phone}</p>
+                                    </div>
+
+                                    {/* Footer */}
+                                    <div className="flex justify-center mt-5">
+                                        <Dialog.Close asChild>
+                                            <button
+                                                className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-2 rounded-xl transition"
+                                                onClick={handleClose}
+                                            >
+                                                Đóng
+                                            </button>
+                                        </Dialog.Close>
+                                    </div>
+                                </Dialog.Content>
+                            </Dialog.Portal>
+                        </Dialog.Root>
                     ))}
                 </div>
-
+                <Organization></Organization>
                 {/* Các tổ */}
-                <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+                {/* <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
                     {[organization.toKhoaHocXaHoi, organization.toKhoaHocTuNhien, organization.toVanPhong].map(
                         (to, i) => (
                             <div
@@ -161,7 +223,7 @@ const About = () => {
                             </div>
                         )
                     )}
-                </div>
+                </div> */}
             </section>
 
             {/* Cơ sở vật chất */}
