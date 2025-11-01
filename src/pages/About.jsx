@@ -237,7 +237,7 @@ const About = () => {
                             {
                                 img: "/images/classroom.jpg",
                                 title: "Phòng học hiện đại",
-                                desc: "30 phòng học được trang bị bảng thông minh, máy chiếu và hệ thống âm thanh",
+                                desc: "20 phòng học được trang bị bảng thông minh, máy chiếu và hệ thống âm thanh",
                             },
                             {
                                 img: "/images/lab.jpg",
