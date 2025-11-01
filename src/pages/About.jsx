@@ -9,9 +9,9 @@ const About = () => {
             title: "Ban Giám Hiệu",
             icon: <User className="text-blue-600 w-8 h-8" />,
             members: [
-                { name: "Nguyễn Thị Hà", dob: "15/07/1970", role: "Hiệu trưởng", degree: "Đại học Sinh Hoá", phone: "0915983718", image: "/images/news3.jpg" },
+                { name: "Nguyễn Thị Hà", dob: "15/07/1970", role: "Hiệu trưởng", degree: "Đại học Sinh Hoá", phone: "0915983718", image: "/images/hahieutruong.jpg" },
                 { name: "Nguyễn Minh Bằng", dob: "19/06/1971", role: "Phó Hiệu trưởng", degree: "Thạc sĩ Ngữ Văn", phone: "0981178778", image: "/images/nguyenminhbang.jpg" },
-                { name: "Nguyễn Thị Thu Hiền", dob: "18/11/1981", role: "Phó Hiệu trưởng", degree: "ĐH Toán", phone: "0915002074", image: "/images/news3.jpg" }
+                { name: "Nguyễn Thị Thu Hiền", dob: "18/11/1981", role: "Phó Hiệu trưởng", degree: "ĐH Toán", phone: "0915002074", image: "/images/hienphohieutruong.jpg" }
             ],
         },
         toKhoaHocXaHoi: {

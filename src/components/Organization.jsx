@@ -64,7 +64,8 @@ const organizations = [
     members: [
       { name: "Phạm Thị Tuyết Chinh", dob: "08/10/1985", degree: "ĐH Kế toán", role: "Kế toán", phone: "0385145388" },
       { name: "Bùi Thị Quỳnh Hương", dob: "26/03/1988", degree: "ĐH Thư viện TB", role: "Nhân viên", phone: "0977883435" },
-      { name: "Đinh Thị Bình", dob: "15/11/1983", degree: "TC TV-TB", role: "Nhân viên", phone: "0358676868" }
+      { name: "Đinh Thị Bình", dob: "15/11/1983", degree: "TC TV-TB", role: "Nhân viên", phone: "0358676868" },
+      { name: "Phạm Thị Phương Thảo", dob: "08/05/1987", degree: "Cao đẳng thiết bị", role: "Nhân viên", phone: "0972302542" }
     ],
   },
 ];
