@@ -188,7 +188,6 @@ const About = () => {
                                         <Dialog.Close asChild>
                                             <button
                                                 className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-2 rounded-xl transition"
-                                                onClick={handleClose}
                                             >
                                                 Đóng
                                             </button>
