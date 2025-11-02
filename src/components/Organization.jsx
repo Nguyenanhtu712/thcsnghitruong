@@ -24,7 +24,7 @@ const organizations = [
       { name: "Nguyễn Thị Kim Quế", dob: "01/10/1971", degree: "ĐH Ngữ Văn", role: "Giáo viên", phone: "0978361335", image: "/images/KHXH/nguyenthikimque.jpg" },
       { name: "Nguyễn Quyết Thắng", dob: "13/11/1979", degree: "ĐH Anh Văn", role: "Giáo viên", phone: "0974021979", image: "/images/KHXH/nguyenquyetthang.jpg" },
       { name: "Đặng Thị Oanh", dob: "03/07/1984", degree: "ĐH Ngữ Văn", role: "Giáo viên", phone: "0913608798", image: "/images/KHXH/dangthioanh.jpg" },
-      { name: "Nguyễn Thế Trọng", dob: "11/01/1978", degree: "ĐH Ngữ Văn", role: "Giáo viên", phone: "0978991992", image: "/images/KHXH/nguyenthetrong.jpg" },
+      { name: "Nguyễn Thế Trọng", dob: "10/06/1977", degree: "ĐH Ngữ Văn", role: "Giáo viên", phone: "0978991922", image: "/images/KHXH/nguyenthetrong.jpg" },
       { name: "Nguyễn Thị Hiền", dob: "19/12/1976", degree: "ĐH Ngữ Văn", role: "Giáo viên", phone: "0917112262", image: "/images/KHXH/nguyenthihien.jpg" },
       { name: "Nguyễn Thị Tuyết Nhung", dob: "02/12/1983", degree: "ĐH Anh Văn", role: "Giáo viên", phone: "0964780349", image: "/images/KHXH/nguyenthituyetnhung.jpg" },
     ],
@@ -56,7 +56,7 @@ const organizations = [
     ],
   },
   {
-    title: "Tổ Văn phòng",
+    title: "Nhóm Văn phòng",
     icon: <Briefcase className="text-purple-600 w-7 h-7" />,
     leader: { name: "Phạm Thị Tuyết Chinh", role: "Tổ trưởng" },
     // deputy: { name: "Bùi Thị Quỳnh Hương", role: "Tổ phó" },
@@ -96,7 +96,7 @@ export default function Organization() {
                   <li>
                     <span className="font-semibold">{org.leader.role}</span>: {org.leader.name}
                   </li>
-                  {org.title !== "Tổ Văn phòng" && <li>
+                  {org.title !== "Nhóm Văn phòng" && <li>
                     <span className="font-semibold">{org.deputy.role}</span>: {org.deputy.name}
                   </li>}
                 </ul>
