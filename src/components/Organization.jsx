@@ -58,7 +58,7 @@ const organizations = [
   {
     title: "Nhóm Văn phòng",
     icon: <Briefcase className="text-purple-600 w-7 h-7" />,
-    leader: { name: "Phạm Thị Tuyết Chinh", role: "Tổ trưởng" },
+    leader: { name: "Phạm Thị Tuyết Chinh", role: "Nhóm trưởng" },
     // deputy: { name: "Bùi Thị Quỳnh Hương", role: "Tổ phó" },
     color: "purple",
     members: [
