@@ -7,6 +7,7 @@ import News from "./pages/News";
 import Achievements from "./pages/Achievements";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
+import NewsDetail from "./pages/NewDetail";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/tin-tuc" element={<News />} />
           <Route path="/thanh-tich" element={<Achievements />} />
           <Route path="/lien-he" element={<Contact />} />
+          <Route path="/tin-tuc/:id" element={<NewsDetail />} />
         </Routes>
       </main>
 
