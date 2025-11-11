@@ -14,9 +14,6 @@ export default function NewsDetail() {
             image:
                 "/images/news1.jpg",
             content: `
-  <p class="text-lg leading-relaxed mb-4">
-    <strong>Công an xã Đông Lộc</strong> tuyên truyền Pháp luật, Kỹ năng sống cho <strong>828 học sinh Trường THCS Thịnh Trường</strong>.
-  </p>
 
   <p class="mb-4">
     Sáng nay, thứ Hai, ngày <strong>10/11/2025</strong>, tại Trường THCS Thịnh Trường (xã Đông Lộc), Công an xã Đông Lộc đã phối hợp tổ chức buổi tuyên truyền chuyên đề toàn diện về 
@@ -34,7 +31,7 @@ export default function NewsDetail() {
     Về phía nhà trường, có cô giáo <strong>Nguyễn Thị Hà</strong> – Bí thư chi bộ, Hiệu trưởng nhà trường, các thầy cô trong Ban Giám hiệu và toàn thể giáo viên.
   </p>
 
-  <h3 class="text-2xl font-semibold mt-8 mb-3 text-blue-700">Nội dung tuyên truyền</h3>
+  <h3 class="text-2xl font-semibold mt-8 mb-3 text-blue-700">Trong buổi lễ, Công an xã đã truyền đạt các nội dung thiết thực, nhằm nâng cao nhận thức và kỹ năng tự bảo vệ cho học sinh:</h3>
   <ul class="list-decimal list-inside space-y-2 mb-6 text-gray-800">
     <li><strong>An toàn giao thông:</strong> Hướng dẫn các quy tắc cần thiết khi tham gia giao thông, đặc biệt là văn hóa đội mũ bảo hiểm và tuân thủ tín hiệu khi đi xe đạp, xe đạp điện.</li>
     <li><strong>Tác hại và cách phòng chống ma túy:</strong> Cảnh báo về các loại ma túy mới, ma túy trá hình, nhấn mạnh tác hại khủng khiếp và cách phòng tránh hiệu quả.</li>
@@ -52,29 +49,23 @@ export default function NewsDetail() {
           className="rounded-2xl shadow-md mx-auto my-8"
         />
 <div class="border-l-4 border-blue-500 pl-4 bg-blue-50 py-3 mb-6 rounded-md">
-    <p class="mb-2"><strong>Thầy Hiệu phó Nguyễn Minh Bằng phát biểu</strong></p>
+    <p class="mb-2"><strong>Thầy Phó Hiệu Trưởng Nguyễn Minh Bằng phát biểu</strong></p>
     
   </div>
     <img
-          src="/images/news1_1.jpg"
+          src="/images/news1_4.jpg"
           alt="Công an trao mũ bảo hiểm"
           className="rounded-2xl shadow-md mx-auto my-8"
         />
 
   <div class="border-l-4 border-blue-500 pl-4 bg-blue-50 py-3 mb-6 rounded-md">
     <p class="mb-2"><strong>🎁 Đại diện Doanh nghiệp xe đạp trợ lực điện Nghệ An</strong> (anh <strong>Nguyễn Anh Dũng</strong> và <strong>Lê Minh Tuấn</strong>) đã trao tặng <strong>10 mũ bảo hiểm</strong> cho học sinh trả lời đúng các câu hỏi.</p>
-    <p><strong>👮‍♂️ Công an xã Đông Lộc</strong> cũng đã trao thêm <strong>10 mũ bảo hiểm</strong> cho học sinh có hoàn cảnh khó khăn nhưng đạt thành tích tốt, thể hiện tinh thần trách nhiệm và quan tâm của lực lượng công an địa phương.</p>
+    <p><strong>👮‍♂️ Công an xã Đông Lộc</strong> cũng đã trao thêm <strong>10 mũ bảo hiểm</strong> cho các em học sinh có hoàn cảnh khó khăn nhưng đã nỗ lực vượt khó vươn lên trong học tập, thể hiện sự quan tâm, động viên kịp thời của lực lượng công an địa phương..</p>
   </div>
 
-  
 
-  <p class="italic text-gray-700 mb-4">
-    Buổi tuyên truyền đã giúp học sinh nâng cao ý thức pháp luật, kỹ năng sống và tinh thần phòng ngừa các tệ nạn xã hội, góp phần xây dựng môi trường học đường an toàn, thân thiện.
-  </p>
-
-  <p class="text-gray-800 font-medium">
-    Buổi tuyên truyền đã <strong>kết thúc tốt đẹp</strong>, là hoạt động thiết thực nhằm giáo dục, tạo nền tảng vững chắc cho học sinh THCS Thịnh Trường về 
-    <strong>ý thức chấp hành pháp luật</strong> và <strong>các kỹ năng sống cơ bản</strong>, góp phần đảm bảo <strong>an ninh, an toàn</strong> tại địa phương và trong nhà trường.
+  <p class="text-gray-700 font-normal">
+    Buổi tuyên truyền đã kết thúc tốt đẹp, là hoạt động thiết thực nhằm giáo dục, tạo nền tảng vững chắc cho học sinh THCS Thịnh Trường về ý thức chấp hành pháp luật và các kỹ năng sống cơ bản, góp phần đảm bảo an ninh, an toàn tại địa phương và trường học.
   </p>
 `
         },
