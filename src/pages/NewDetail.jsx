@@ -6,6 +6,215 @@ export default function NewsDetail() {
 
     // 👉 Giả lập dữ liệu tin tức (sau này bạn có thể load từ API hoặc JSON)
     const articles = [
+      {
+  id: 4,
+  title: "Văn nghệ chào mừng ngày nhà giáo Việt Nam 20/11 của Trường THCS Thịnh Trường",
+  date: "17/11/2025",
+  image:
+    "/images/vannghe/vannghe1.jpg",
+  content: `
+<div>
+
+  <p style="font-size:1.15rem; font-weight:500; margin-bottom:1.25rem; text-align:justify;">
+    Hòa chung không khí thi đua sôi nổi lập thành tích chào mừng 
+    <strong>43 năm Ngày Nhà giáo Việt Nam (20/11/1982 - 20/11/2025)</strong>, 
+    chiều thứ Hai, ngày <strong>17/11/2025</strong>, Trường THCS Thịnh Trường đã tưng bừng tổ chức 
+    <strong>Hội diễn văn nghệ quần chúng cấp trường</strong>.
+  </p>
+
+  <p style="margin-bottom:1.25rem; text-align:justify;">
+    Chương trình được tổ chức trang trọng tại 
+    <strong>Hội trường Công an xã Đông Lộc</strong>, thu hút sự tham gia của đông đảo cán bộ, giáo viên, nhân viên và toàn thể học sinh nhà trường.
+  </p>
+
+  <p style="margin-bottom:1.25rem; text-align:justify;">
+    Hội diễn năm nay quy tụ <strong>20 tiết mục dự thi</strong> đến từ 20 tập thể lớp. 
+    Với sự chuẩn bị chu đáo, luyện tập nghiêm túc và dàn dựng công phu, các "diễn viên không chuyên" của trường THCS Thịnh Trường đã mang đến một 
+    <strong>bữa tiệc nghệ thuật đa sắc màu</strong>.
+  </p>
+
+  <p style="margin-bottom:1.25rem;">Các tiết mục tập trung ca ngợi:</p>
+  <ul style="margin-left:1.2rem; margin-bottom:1.2rem;">
+    <li style="margin-bottom:0.5rem;">Tình yêu quê hương đất nước</li>
+    <li style="margin-bottom:0.5rem;">Công ơn thầy cô giáo</li>
+    <li style="margin-bottom:0.5rem;">Tình bạn, mái trường</li>
+    <li style="margin-bottom:0.5rem;">Và nhiều chủ đề ý nghĩa khác</li>
+  </ul>
+
+  <p style="margin-bottom:1.25rem; text-align:justify;">
+    Nhiều tiết mục được đầu tư kỹ lưỡng về trang phục, đạo cụ và đặc biệt là thể hiện được tài năng, sự sáng tạo của các em học sinh, để lại ấn tượng sâu đậm trong lòng khán giả.
+  </p>
+
+  <hr style="border:0; border-top:1px solid #e5e7eb; margin:2rem 0;">
+
+  <h2 style="font-size:1.7rem; font-weight:700; margin:2rem 0 1rem; color:#222;">
+    🎤 Kết quả chung cuộc
+  </h2>
+
+  <h3 style="font-size:1.35rem; font-weight:700; margin:1.5rem 0 1rem; color:#222;">🥇 03 Giải A</h3>
+  <ul style="margin-left:1.2rem; margin-bottom:1.2rem;">
+    <li>Lớp <strong>9D</strong> – Tác phẩm <em>"Nhà giáo cách mạng"</em>
+        <img
+          src="/images/vannghe/vannghe2.jpg"
+          alt="Văn nghệ tại trường"
+          className="rounded-2xl shadow-md mx-auto my-8"
+          style="
+            display:block;
+            margin:2rem auto;
+            max-width:70%;
+            border-radius:16px;
+            box-shadow:0 4px 16px rgba(0,0,0,0.15);
+          "
+        />
+    </li>
+    <li>Lớp <strong>9A</strong> – Tác phẩm <em>"Em là cô giáo vùng cao"</em>
+        <img
+          src="/images/vannghe/vannghe3.jpg"
+          alt="Văn nghệ tại trường"
+          className="rounded-2xl shadow-md mx-auto my-8"
+          style="
+            display:block;
+            margin:2rem auto;
+            max-width:70%;
+            border-radius:16px;
+            box-shadow:0 4px 16px rgba(0,0,0,0.15);
+          "
+        />
+    </li>
+    <li>Lớp <strong>7A</strong> – Hoạt cảnh <em>"Nhà giáo cách mạng"</em>
+        <img
+          src="/images/vannghe/vannghe4.jpg"
+          alt="Văn nghệ tại trường"
+          className="rounded-2xl shadow-md mx-auto my-8"
+          style="
+            display:block;
+            margin:2rem auto;
+            max-width:70%;
+            border-radius:16px;
+            box-shadow:0 4px 16px rgba(0,0,0,0.15);
+          "
+        />
+    </li>
+  </ul>
+
+  <h3 style="font-size:1.35rem; font-weight:700; margin:1.5rem 0 1rem; color:#222;">🥈 03 Giải B</h3>
+  <ul style="margin-left:1.2rem; margin-bottom:1.2rem;">
+    <li>Lớp <strong>8A</strong>
+        <img
+          src="/images/vannghe/vannghe5.jpg"
+          alt="Văn nghệ tại trường"
+          className="rounded-2xl shadow-md mx-auto my-8"
+          style="
+            display:block;
+            margin:2rem auto;
+            max-width:70%;
+            border-radius:16px;
+            box-shadow:0 4px 16px rgba(0,0,0,0.15);
+          "
+        />
+    </li>
+    <li>Lớp <strong>6A</strong>
+        <img
+          src="/images/vannghe/vannghe6.jpg"
+          alt="Văn nghệ tại trường"
+          className="rounded-2xl shadow-md mx-auto my-8"
+          style="
+            display:block;
+            margin:2rem auto;
+            max-width:70%;
+            border-radius:16px;
+            box-shadow:0 4px 16px rgba(0,0,0,0.15);
+          "
+        />
+    </li>
+    <li>Lớp <strong>9B</strong>
+        <img
+          src="/images/vannghe/vannghe7.jpg"
+          alt="Văn nghệ tại trường"
+          className="rounded-2xl shadow-md mx-auto my-8"
+          style="
+            display:block;
+            margin:2rem auto;
+            max-width:70%;
+            border-radius:16px;
+            box-shadow:0 4px 16px rgba(0,0,0,0.15);
+          "
+        />
+    </li>
+  </ul>
+
+  <h3 style="font-size:1.35rem; font-weight:700; margin:1.5rem 0 1rem; color:#222;">🥉 04 Giải C</h3>
+  <ul style="margin-left:1.2rem; margin-bottom:1.2rem;">
+    <li>Lớp <strong>8D</strong>
+        <img
+          src="/images/vannghe/vannghe8.jpg"
+          alt="Văn nghệ tại trường"
+          className="rounded-2xl shadow-md mx-auto my-8"
+          style="
+            display:block;
+            margin:2rem auto;
+            max-width:70%;
+            border-radius:16px;
+            box-shadow:0 4px 16px rgba(0,0,0,0.15);
+          "
+        />
+    </li>
+    <li>Lớp <strong>6C</strong>
+        <img
+          src="/images/vannghe/vannghe9.jpg"
+          alt="Văn nghệ tại trường"
+          className="rounded-2xl shadow-md mx-auto my-8"
+          style="
+            display:block;
+            margin:2rem auto;
+            max-width:70%;
+            border-radius:16px;
+            box-shadow:0 4px 16px rgba(0,0,0,0.15);
+          "
+        />
+    </li>
+    <li>Lớp <strong>8B</strong>
+        <img
+          src="/images/vannghe/vannghe10.jpg"
+          alt="Văn nghệ tại trường"
+          className="rounded-2xl shadow-md mx-auto my-8"
+          style="
+            display:block;
+            margin:2rem auto;
+            max-width:70%;
+            border-radius:16px;
+            box-shadow:0 4px 16px rgba(0,0,0,0.15);
+          "
+        />
+    </li>
+    <li>Lớp <strong>8C</strong>
+        <img
+          src="/images/vannghe/vannghe11.jpg"
+          alt="Văn nghệ tại trường"
+          className="rounded-2xl shadow-md mx-auto my-8"
+          style="
+            display:block;
+            margin:2rem auto;
+            max-width:70%;
+            border-radius:16px;
+            box-shadow:0 4px 16px rgba(0,0,0,0.15);
+          "
+        />
+    </li>
+  </ul>
+
+
+  <hr style="border:0; border-top:1px solid #e5e7eb; margin:2rem 0;">
+
+  <div style="background:#f8fafc; border-left:4px solid #3b82f6; padding:1rem 1.2rem; border-radius:6px; font-size:1.05rem;">
+    Hội diễn văn nghệ Trường THCS Thịnh Trường đã khép lại trong niềm hân hoan, phấn khởi. 
+    Đây không chỉ là <strong>sân chơi nghệ thuật bổ ích</strong>, mà còn là hoạt động ý nghĩa thể hiện 
+    <strong>lòng tri ân sâu sắc của các thế hệ học sinh gửi đến các thầy cô giáo nhân ngày 20/11</strong>, 
+    góp phần thắt chặt tình đoàn kết thầy trò và xây dựng môi trường học đường thân thiện, tích cực.
+  </div>
+
+</div>`,
+},
         {
             id: 1,
             title:

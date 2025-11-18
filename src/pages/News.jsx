@@ -4,6 +4,15 @@ import { Calendar } from "lucide-react";
 export default function News() {
   const articles = [
     {
+      id: 4,
+      title:
+        "Văn nghệ chào mừng ngày nhà giáo Việt Nam 20/11 của Trường THCS Thịnh Trường",
+      desc: "Hòa chung không khí thi đua sôi nổi lập thành tích chào mừng 43 năm Ngày Nhà giáo Việt Nam (20/11/1982 - 20/11/2025).",
+      date: "17/11/2025",
+      image:
+        "/images/vannghe/vannghe1.jpg",
+    },
+    {
       id: 1,
       title:
         "Công an xã Đông Lộc tuyên truyền Pháp luật, Kỹ năng sống cho 828 học sinh Trường THCS Thịnh Trường",
